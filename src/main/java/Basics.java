@@ -95,6 +95,10 @@ public class Basics {
          * Current count: 0
          */
 
+        for (int i = 10; i >= 0; i--) {
+            System.out.println("Current Count: " + i);
+        }
+
 
     }
 
@@ -137,7 +141,11 @@ public class Basics {
          */
         StringBuilder ret = new StringBuilder();
 
-        // Fill in the rest of the body here
+        String [] splitArray = to_split.split(" ");
+
+        for (int i = 0; i < splitArray.length; i++) {
+            ret.append(splitArray[i].charAt(0));
+        }
 
         return ret.toString();
     }
